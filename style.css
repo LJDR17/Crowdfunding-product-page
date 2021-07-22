@@ -1,0 +1,306 @@
+body {
+    background-color: hsl(0, 0%, 95%);
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Commissioner';
+    font-size: 23px;
+    font-weight: 700;
+    color: black;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Commissioner';
+    font-weight: 400;
+    line-height: 30px;
+    color:hsl(0, 0%, 48%);
+}
+
+.navbar {
+    width: 100%;
+    height: 68px;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    padding-left: 60px; 
+    padding-top: 40px;
+    height: 100%;
+    font-family: arial, sans-serif;
+    font-size: 14px; 
+}
+
+.logo-container {
+    padding-left: 160px;
+    flex: 2;
+}
+
+.menu-list{ 
+    display:flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu-container {
+    flex: 1;
+}
+
+.menu-list-item{ 
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    width: 100px;
+    font-family: 'Commissioner';
+    
+}
+
+.header-image {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 17.5%;
+    align-items: center;
+    width: 100%; 
+    height: 1900px;
+}
+
+.box {
+    margin-bottom: 30px;
+    background-color: white;
+    width: 850px;
+    border-radius: 20px;
+}
+
+.title-box { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-logo{
+    margin-top: -30px;
+}
+
+.title-box-content-container {
+    width: 100%;
+    text-align: center;
+    height: 300px;
+}
+
+.title-box-text {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.title {
+    font-size: 30px;
+    font-family: 'Commissioner';
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.title-box-buttons {
+    display: flex;
+    font-family: 'Commissioner';
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 60px;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 225px;
+    height: 60px;
+    background-color:hsl(176, 50%, 47%);
+    border-radius: 30px;
+    color: white;
+    margin-right: 310px;
+    transition: 0.3s;
+}
+
+.hover:hover {
+    background-color: hsl(176, 72%, 28%);
+} 
+
+.bookmark-flex {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 180px;
+    height: 60px;
+    background-color:hsl(0, 0%, 93%);
+    border-radius: 30px;
+    color: hsl(0, 0%, 40%);
+    
+}
+
+#bookmark-image {
+    padding-right: 15px;
+    transition: 0.3s;
+}
+
+#bookmark-svg, #bookmark-svg-inner, #bookmark-text{
+    transition: 0.3s;
+}
+
+.stats-box-content-container {
+    width: 100%;
+    height: 160px;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+.stats-box-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.stat-item {
+    padding-right: 50px;
+    border-right: 1px solid hsl(0, 0%, 80%);
+    padding-left: 50px;
+}
+
+.no-border{
+    border-right: 0px;
+}
+
+.number {
+    font-size: 30px;
+    font-family: 'Commissioner';
+    font-weight: 700;
+}
+
+.label {
+    font-size: 16px;
+    font-family: 'Commissioner';
+    color: hsl(0, 0%, 48%);
+    padding-top: 10px;
+}
+
+.bar {
+    width: 85%;
+    background-color: hsl(0, 0%, 95%);
+    margin-left: 50px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+  
+.progress {
+    width: 50%;
+    height: 15px;
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 10px;
+}
+
+.main-box-container {
+    margin-left: 60px;
+}
+
+.main-box-description {
+    width: 90%;
+}
+
+.desc-title {
+    margin-bottom: 35px;
+}
+
+
+.main-box-grid-container {
+    margin-top: 30px;
+    width: 90%;
+}
+
+.main-box-grid-item {
+    border: 1px solid hsl(0, 0%, 80%);
+    margin-bottom: 25px;
+    border-radius: 10px;
+    height: 265px;
+}
+
+.main-box-grid-item-content {
+    padding-top: 30px;
+    padding-left: 25px;
+}
+
+.main-box-title-flex {
+    display: flex;
+    align-items: center;
+}
+
+.main-box-title {
+    flex: 1;
+}
+
+.main-box-label {
+    font-family: 'Commissioner';
+    font-size: 16px;
+    font-weight: 700;
+    flex: 0.35;
+    color:hsl(176, 50%, 47%);
+}
+
+.main-box-description {
+    margin-bottom: 20px;
+}
+
+.number-left-flex {
+    display: flex;
+    align-items: center;
+}
+
+.number-left {
+    display: flex;
+    align-items: center;
+}
+
+.number {
+    margin-right: 10px;
+}
+
+.number-label {
+    font-size: 16px;
+    font-family: 'Commissioner';
+    font-weight: 500;
+    color: hsl(0, 0%, 48%);
+    margin-right: 325px;
+}
+
+.select-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 55px;
+    background-color:hsl(176, 50%, 47%);
+    border-radius: 30px;
+    color: white;
+    font-family: 'Commissioner';
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.last-grid * {
+    opacity: .7; 
+}
+
+.last-grid {
+    border: 1px solid hsl(0, 0%, 90%);
+}
+
+.last-button {
+    background-color: hsl(0, 0%, 48%);
+}
