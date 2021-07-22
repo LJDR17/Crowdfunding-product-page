@@ -62,8 +62,8 @@
                     </div>
                 </div>
 
-                <div class="bar">
-                    <div class="progress"></div>
+                <div id="bar">
+                    <div id="progress"></div>
                 </div>
             </div>
         </div>
@@ -93,10 +93,10 @@
        
                                 <div class="number-left-flex">
                                     <div class="number-left">
-                                        <div class="number">number</div>
-                                        <div class="number-label">left</div>
+                                        <div class="number">101</div>
+                                        <div class="number-label L1">left</div>
                                     </div>
-                                    <div class="select-button hover">Select Reward</div>
+                                    <div class="select-button hover" data-open="modal1" onclick='move()'>Select Reward</div>
                                 </div>
                             </div>
                         </div>
@@ -113,10 +113,10 @@
        
                                 <div class="number-left-flex">
                                     <div class="number-left">
-                                        <div class="number">number</div>
-                                        <div class="number-label">left</div>
+                                        <div class="number">56</div>
+                                        <div class="number-label L2">left</div>
                                     </div>
-                                    <div class="select-button hover">Select Reward</div>
+                                    <div class="select-button hover" data-open="modal1" onclick='move()'>Select Reward</div>
                                 </div>
                             </div>
                         </div>
@@ -133,8 +133,8 @@
        
                                 <div class="number-left-flex">
                                     <div class="number-left">
-                                        <div class="number">number</div>
-                                        <div class="number-label">left</div>
+                                        <div class="number">0</div>
+                                        <div class="number-label L3">left</div>
                                     </div>
                                     <div class="select-button last-button">Out of stock</div>
                                 </div>
@@ -145,6 +145,18 @@
             </div>
         </div>
     </div>
+
+        
+    <div class="modal" id="modal1">
+        <div class="modal-box">
+            <img class="tick" src="images/icon-check.svg">
+            <h2 class="modal-title">Thanks for your support!</h2>
+            <p class="modal-text">Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. 
+            You will get an email once our campaign is completed.</p>
+            <div class="close-modal hover" data-close>Got it!</div>
+        </div>
+    </div>
+
 </body>
 <script src="script.js"></script>
 </html>
