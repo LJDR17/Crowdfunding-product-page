@@ -190,7 +190,7 @@ p {
     padding-top: 10px;
 }
 
-.bar {
+#bar {
     width: 85%;
     background-color: hsl(0, 0%, 95%);
     margin-left: 50px;
@@ -198,8 +198,8 @@ p {
     border-radius: 10px;
 }
   
-.progress {
-    width: 50%;
+#progress {
+    width: 1%;
     height: 15px;
     background-color: hsl(176, 50%, 47%);
     border-radius: 10px;
@@ -275,8 +275,11 @@ p {
     font-family: 'Commissioner';
     font-weight: 500;
     color: hsl(0, 0%, 48%);
-    margin-right: 325px;
 }
+
+.L1{margin-right: 385px;}
+.L2 {margin-right: 395px;}
+.L3 {margin-right: 410px;}
 
 .select-button {
     display: flex;
@@ -303,4 +306,84 @@ p {
 
 .last-button {
     background-color: hsl(0, 0%, 48%);
+}
+
+:root {
+    --lightgray: #efefef;
+    --blue: steelblue;
+    --white: #fff;
+    --black: rgba(0, 0, 0, 0.8);
+    --bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+   
+.modal { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: var(--black);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+}
+
+.modal-box {
+    position: relative;
+    width: 550px;
+    height: 450px;
+    border-radius: 7px;
+    background: var(--white);
+    overflow: auto;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease-in;
+}
+   
+.modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.close-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    width: 110px;
+    height: 50px;
+    background-color:hsl(176, 50%, 47%);
+    border-radius: 30px;
+    color: white;
+    font-family: 'Commissioner';
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.tick {
+    width: 90px;
+    margin-top: 50px;
+}
+
+.modal-title {
+    margin-top: 45px;
+    margin-bottom: -1px;
+}
+
+.modal-text {
+    width: 80%;
+    text-align: center;
 }
