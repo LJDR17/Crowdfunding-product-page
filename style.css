@@ -1,5 +1,9 @@
+html {
+    width: 100%;
+}
+
 body {
-    background-color: hsl(0, 0%, 93%);
+    background-color: hsl(0, 0%, 95%);
     margin: 0;
 }
 
@@ -34,8 +38,9 @@ p {
 }
 
 .logo-container {
-    padding-left: 160px;
+    padding-left: 10%;
     flex: 2;
+    user-select: none;        
 }
 
 .menu-list{ 
@@ -58,10 +63,14 @@ p {
     
 }
 
-.header-image {
+#header-image {
     position: absolute;
     width: 100%;
     z-index: -1;
+}
+
+#hamburger {
+    visibility: hidden;
 }
 
 .content {
@@ -88,6 +97,8 @@ p {
 
 .title-logo{
     margin-top: -30px;
+    user-select: none;        
+    
 }
 
 .title-box-content-container {
@@ -98,14 +109,17 @@ p {
 
 .title-box-text {
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title {
     font-size: 30px;
     font-family: 'Commissioner';
     font-weight: 700;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .title-box-buttons {
@@ -127,6 +141,8 @@ p {
     color: white;
     margin-right: 310px;
     transition: 0.3s;
+    user-select: none;        
+    
 }
 
 .hover:hover {
@@ -142,7 +158,7 @@ p {
     background-color:hsl(0, 0%, 93%);
     border-radius: 30px;
     color: hsl(0, 0%, 40%);
-    
+    user-select: none;        
 }
 
 #bookmark-image {
@@ -346,12 +362,32 @@ p {
     align-items: center;
 }
 
-.modal {
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.35s ease-in;
+.modal-box2 {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    border-radius: 7px;
+    background: var(--white);
+    overflow: auto;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-   
+
+.modal-box3 {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    border-radius: 7px;
+    background: var(--white);
+    overflow: auto;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .modal.is-visible {
     visibility: visible;
     opacity: 1;
@@ -386,4 +422,95 @@ p {
 .modal-text {
     width: 80%;
     text-align: center;
+}
+
+
+@media only screen and (max-width: 860px) {
+    .content {
+        height: 2850px;
+    }
+    .logo-container {
+        padding-left: 20px;
+    }
+    .title-box-content-container {
+        height: 330px;
+    }
+    #hamburger {
+        visibility: visible;
+        margin-right: 10%;
+    }
+    .box {
+        width: 350px;
+    }
+    .back {
+        margin-right: 30px;
+        margin-left: 20px;
+    }
+    .title-box-buttons {
+        margin-left: 0px;
+    }
+    .L1 {margin-right: 10px;}
+    .L2 {margin-right: 10px;}
+    .L3 {margin-right: 10px;}
+
+    .title {
+       padding-bottom: 10px;
+    }
+    .text {
+        width: 300px;
+    }
+    .title-box-text {
+        margin-bottom: 10px;
+    }
+    .bookmark-flex {
+        width: 0px;
+    }
+    .menu-container {
+        display: none;
+    }
+    .stats-box-content-container {
+        height: 420px;
+    }
+    .stats-box-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .stat-item {
+        width: 50%;
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center;
+        border-right: 0px;
+        border-bottom: 1px solid hsl(0, 0%, 80%);
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #bar {
+        width: 85%;
+        margin-left: 20px;
+    }
+    .main-box-container {
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+    .main-box-grid-item {
+        height: 430px;
+    }
+    .main-box-grid-item-content {
+        padding-top: 10px;
+    }
+    .main-box-title-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main-box-title {
+        font-size: 18px;
+    }
+    .number-left-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .number-left {
+        padding-bottom: 20px;
+    }
 }
