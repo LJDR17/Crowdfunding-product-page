@@ -11,11 +11,12 @@
 <body>
 
     <div class="header">
-        <img class="header-image" src="images/image-hero-desktop.jpg">
+        <img id="header-image" src="images/image-hero-desktop.jpg">
         <div class="navbar">
             <div class="navbar-container">
                 <div class="logo-container">
                     <img class="logo" src="images/logo.svg" alt=""></div>
+                    <img id="hamburger" src="images/icon-hamburger.svg" alt="">
                 <div class="menu-container">
                     <ul class="menu-list">
                         <li class="menu-list-item">About</li>
@@ -27,6 +28,8 @@
         </div>
     </div>
     
+    
+
     <div class="content">
         <div class="title-box box">
             <div class="title-box-content-container">
@@ -36,7 +39,7 @@
                     <p class="text">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
                 </div>
                 <div class="title-box-buttons">
-                    <div class="back hover">Back this project</div>
+                    <div class="back hover" data-open="modal2">Back this project</div>
                     <div class="bookmark-flex" onclick='bookmarkColor()'>
                         <div id="bookmark-image"><svg  xmlns="http://www.w3.org/2000/svg" width="56" height="56"><g fill="none" fill-rule="evenodd"><circle id="bookmark-svg" fill="#2F2F2F" cx="28" cy="28" r="28"/><path id="bookmark-svg-inner"  fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z"/></g></svg></div>
                         <div id="bookmark-text">Bookmark</div>
@@ -49,11 +52,11 @@
             <div class="stats-box-content-container">
                 <div class="stats-box-flex">
                     <div class="stat-item">
-                        <div class="number">$89,914</div>
+                        <div class="number"  id="money-backed">0</div>
                         <div class="label">of $100,000 backed</div>
                     </div>
                     <div class="stat-item">
-                        <div class="number">5,007</div>
+                        <div class="number" id="number-backed">0</div>
                         <div class="label">total backers</div>
                     </div>
                     <div class="stat-item no-border">
@@ -96,7 +99,7 @@
                                         <div class="number">101</div>
                                         <div class="number-label L1">left</div>
                                     </div>
-                                    <div class="select-button hover" data-open="modal1" onclick='move()'>Select Reward</div>
+                                    <div class="select-button hover" data-open="modal1" onclick='move()' id="25">Select Reward</div>
                                 </div>
                             </div>
                         </div>
@@ -113,10 +116,10 @@
        
                                 <div class="number-left-flex">
                                     <div class="number-left">
-                                        <div class="number">64</div>
+                                        <div class="number">56</div>
                                         <div class="number-label L2">left</div>
                                     </div>
-                                    <div class="select-button hover" data-open="modal1" onclick='move()'>Select Reward</div>
+                                    <div class="select-button hover" data-open="modal1" onclick='move()' id="75">Select Reward</div>
                                 </div>
                             </div>
                         </div>
@@ -156,6 +159,40 @@
             <div class="close-modal hover" data-close>Got it!</div>
         </div>
     </div>
+
+    <div class="modal" id="modal2">
+        <div class="modal-box2">
+            <div class="main-box-grid">
+    
+                <div class="main-box-grid-item">
+                    <div class="main-box-grid-item-content">
+                        <div class="main-box-title-flex">
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <h2 class="main-box-title">Bamboo Stand</h2>
+                            <div class="main-box-label">Pledge $25 or more</div>
+                            <div class="number-left-flex">
+                                <div class="number-left">
+                                    <div class="number">101</div>
+                                    <div class="number-label">left</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="main-box-description">You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added 
+                            to a special Backer member list.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+    <div class="modal" id="modal3">
+        <div class="modal-box3">
+        </div>
+    </div>
+
 
 </body>
 <script src="script.js"></script>
