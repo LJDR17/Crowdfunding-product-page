@@ -230,7 +230,8 @@ p {
 }
 
 .desc-title {
-    margin-bottom: 35px;
+    margin-bottom: 10px;
+    flex: 1;
 }
 
 
@@ -244,6 +245,12 @@ p {
     margin-bottom: 25px;
     border-radius: 10px;
     height: 265px;
+}
+
+.main-box-grid-item-modal2 {
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    margin-bottom: 25px;
 }
 
 .main-box-grid-item-content {
@@ -291,6 +298,7 @@ p {
     font-family: 'Commissioner';
     font-weight: 500;
     color: hsl(0, 0%, 48%);
+    margin-right: 20px;
 }
 
 .L1{margin-right: 385px;}
@@ -364,8 +372,8 @@ p {
 
 .modal-box2 {
     position: relative;
-    width: 800px;
-    height: 450px;
+    width: 850px;
+    height: 925px;
     border-radius: 7px;
     background: var(--white);
     overflow: auto;
@@ -375,6 +383,82 @@ p {
     align-items: center;
 }
 
+.modal2-item {
+    
+}
+
+.modal2-grid-container {
+    margin-top: 0px;
+}
+
+.main-box-grid-item-content-modal2 {
+    padding-top: 0px;
+    padding-left: 25px;
+}
+
+.main-box-grid-item-content-modal2-last {
+    padding-top: 0px;
+    padding-left: 25px;
+}
+
+.main-box-title-modal2 {
+    margin-left: 10px;
+}
+
+.main-box-title-modal2:hover {
+    color: hsl(176, 50%, 47%);
+}
+
+
+.main-box-description-modal2 {
+    margin-top: 0px;
+    width: 90%;
+    padding-left: 45px;
+}
+
+.main-box-label-modal2 {
+    font-family: 'Commissioner';
+    font-size: 16px;
+    font-weight: 700;
+    color:hsl(176, 50%, 47%);
+    margin-left: 10px;
+    flex: 1;
+}
+
+input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid #bbbbbb;
+    background-color: white;
+    border-radius: 50%;
+}
+  
+/* appearance for checked radiobutton */
+    input[type="radio"]:checked {
+    background-color: hsl(176, 50%, 47%);
+}
+
+.close-button {
+    flex: 0.2;
+}
+
+.main-box-description-title-flex {
+    display: flex;
+    align-items: center;
+}
+
+.last-title-modal2 {
+    margin-left: 45px;
+}
 .modal-box3 {
     position: relative;
     width: 800px;
@@ -513,4 +597,55 @@ p {
     .number-left {
         padding-bottom: 20px;
     }
+}
+
+
+.enter-pledge-container {
+
+}
+
+.enter-pledge-flex {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid grey;
+    display: none;
+    height: 100px;
+}
+
+.pledge-text {
+    font-family: 'Commissioner';
+    font-size: 16px;
+    color:hsl(0, 0%, 48%);
+    flex: 0.95;
+}
+
+.enter-input {
+    width: 100px;
+    height: 55px;
+    border-radius: 30px;
+    border-color: hsl(176, 50%, 47%);
+    outline: none;
+    color: black;
+    font-family: 'Commissioner';
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 10px;
+    padding-left: 10px;
+    -webkit-appearance: none;
+
+}
+
+.continue-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 55px;
+    background-color:hsl(176, 50%, 47%);
+    border-radius: 30px;
+    color: white;
+    font-family: 'Commissioner';
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
 }
