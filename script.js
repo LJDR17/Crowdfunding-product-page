@@ -49,6 +49,7 @@ document.getElementById("75").addEventListener("click", increment2);
 //modal popup box
 const openEls = document.querySelectorAll("[data-open]");
 const closeEls = document.querySelectorAll("[data-close]");
+const closeEls2 = document.querySelectorAll("[data-close2]");
 const isVisible = "is-visible";
  
 for(const el of openEls) {
@@ -61,6 +62,12 @@ for(const el of openEls) {
 for (const el of closeEls) {
   el.addEventListener("click", function() {
     this.parentElement.parentElement.classList.remove(isVisible);
+  });
+}
+
+for (const el of closeEls2) {
+  el.addEventListener("click", function() {
+    this.parentElement.parentElement.parentElement.parentElement.classList.remove(isVisible);
   });
 }
  
@@ -102,5 +109,32 @@ function header(y) {
     document.getElementById("header-image").src = "images/image-hero-desktop.jpg";
   }
 }
-header(y) 
-y.addEventListener("change", header) 
+header(y);
+y.addEventListener("change", header);
+
+
+//collapsible
+  const modal2Title = document.querySelectorAll(".main-box-grid-item-content-modal2");
+  const pledges = document.querySelectorAll(".enter-pledge-flex");
+  const modalItem = document.querySelectorAll(".main-box-grid-item-modal2");
+  //const inputs = document.querySelectorAll(".radioClass");
+
+  modal2Title.forEach( item => {
+    item.addEventListener("click", () =>{
+        pledges.forEach( pledge => {
+          pledge.style.display = "none";
+        })
+        modalItem.forEach(item => { 
+            item.style.border = "1px solid hsl(0, 0%, 68%)";
+        })
+        //inputs.forEach(input => {
+          //input.checked = "false";
+        //})
+    
+        item.children[2].style.display = "flex";
+        item.parentNode.style.border = "2px solid hsl(176, 50%, 47%)";
+        //item.children[0] = "true";
+        
+    })
+  })
+ 
